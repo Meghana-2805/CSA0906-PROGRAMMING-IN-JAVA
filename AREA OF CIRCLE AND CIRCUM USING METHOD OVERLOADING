@@ -1,0 +1,23 @@
+import java.io.*;
+import java.util.*;
+class circle
+{
+float area(int r,float pi)
+{
+return pi*r*r;
+}
+double area(double p,int s)
+{
+return 2*p*s;
+}
+}
+class cle
+{
+public static void main(String args[])
+{
+circle c=new circle();
+System.out.println(c.area(6,3.14f);
+System.out.println(c.area(3.14,7));
+}
+}
+
