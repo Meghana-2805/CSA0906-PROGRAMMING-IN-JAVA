@@ -1,0 +1,38 @@
+import java.io.*;
+import java.util.*;
+class example
+{
+int area(int a,int b)
+{
+return a*b;
+}
+float area(float c,int d)
+{
+return a-b;
+}
+float area(float e,float f)
+{
+return e*f;
+}
+float area(int g,float h)
+{
+return g/h;
+}
+double area(double i,int j)
+{
+return i%j;
+}
+
+}
+class mol
+{
+public static void main(String args[])
+{
+example e=new example();
+System.out.println(e.area(10,4));
+System.out.println(e.area(10.5f,6));
+System.out.println(e.area(10.9f,2.4f));
+System.out.println(e.area(10,9.5f));
+System.out.println(e.area(5.98,7));
+}
+}
