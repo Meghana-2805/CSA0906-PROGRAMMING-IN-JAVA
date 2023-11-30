@@ -1,0 +1,51 @@
+import java.io.*;
+import java.util.*;
+class student
+{
+int x; 
+void display()
+{ 
+Scanner s new Scanner(System.in);
+System.out.println("Enter reg num");
+x=s.nextInt();
+}
+}
+
+class testmark extends student
+{
+int m1,m2;
+void display1()
+{
+Scanner s new Scanner(System.in);
+System.out.println("Enter mark1 and mark2" );
+m1=s.nextInt();
+m2=s.nextInt();
+}
+}
+interface sportsmark
+{
+public void display2();
+}
+class result extends testmark implements sportsmark
+{
+int s1,s2,result;
+void display2()
+{
+Scanner s=new Scanner(System.in);
+System.out.println("Enter mark1 and mark2" );
+s1=s.nextInt();
+s2=s.nextInt();
+result=m1+m2+s1+s2;
+System.out.println("result is :"+result);
+}
+}
+class child
+{
+public static void main(String args[])
+{
+result n=new result();
+n.display2();
+n.display1();
+n.display();
+}
+}
